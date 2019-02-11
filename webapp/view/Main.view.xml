@@ -1,0 +1,62 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" controllerName="demo.F4SUI.controller.Main" displayBlock="true">
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+		
+				<content>
+			<HBox>
+					<Button id="openMenu" text="Categories" press="handlePressOpenMenu" />
+							<Button id="openMenu1" text="User groups" press="handlePressOpenMenu" />
+								<Button id="openMenu2" text="My automation requests" press="handlePressOpenMenu" />
+			</HBox>
+					<l:VerticalLayout>
+						<l:HorizontalLayout id="TileContainerExpanded" allowWrapping="true">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Corporate Finance" id="tile1" frameType="TwoByOne" press="onPress">
+								<TileContent>
+									<FeedContent value="10"/>
+								</TileContent>
+							</GenericTile>
+						</l:HorizontalLayout>
+						<l:HorizontalLayout id="TileContainerExpanded1" allowWrapping="true">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Order 2 Cash" id="tile2" frameType="TwoByOne">
+								<TileContent>
+									<FeedContent value="15"/>
+								</TileContent>
+							</GenericTile>
+						</l:HorizontalLayout>
+					</l:VerticalLayout>
+					<l:VerticalLayout>
+						<l:HorizontalLayout id="TileContainerExpanded3" allowWrapping="true">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="System admin" id="tile4" frameType="TwoByOne">
+									<TileContent>
+									<FeedContent value="12"/>
+								
+								</TileContent>
+							</GenericTile>
+						</l:HorizontalLayout>
+					
+						<l:HorizontalLayout id="TileContainerExpanded5" allowWrapping="true">
+							<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Lead to quote" id="tile6" frameType="TwoByOne">
+									<TileContent>
+									<FeedContent value="20"/>
+									
+								</TileContent>
+							</GenericTile>
+						</l:HorizontalLayout>
+					
+					</l:VerticalLayout>
+					<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout " header="Top executed" id="tile7">
+									<TileContent>
+									<Text text="1.Create account clerk"/>
+										<Text text="2.Create account clerk"/>
+											<Text text="3.Create account clerk"/>
+												<Text text="4.Create account clerk"/>
+								
+								</TileContent>
+							</GenericTile>
+						
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

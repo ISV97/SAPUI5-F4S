@@ -1,0 +1,163 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" controllerName="demo.F4SUI.controller.Corporate" displayBlock="true">
+    <Page
+        showNavButton="true"
+		navButtonPress="onNavBack">
+
+	<Label text="Corporate Finance" width="100%" id="label0_1549273765601"/>
+
+
+
+	<Table noDataText="Drop column list items here and columns in the area above" id="table0">
+
+
+
+	    <items>
+
+
+
+	        <ColumnListItem type="Active" id="item0">
+
+
+
+	            <cells>
+
+
+
+	                <Text text="1" id="text0"/>
+
+
+
+	                <Text text="Create account clerk" id="text1"/>
+
+
+
+	                <Text text="Creates accounting clerk authorization" id="text2"/>
+	                <Link text="Click" id="text3" press="onPress"/></cells>
+	            </ColumnListItem>
+	             <ColumnListItem type="Active" id="item1">
+
+	                <cells>
+
+
+
+	                <Text text="2" id="text4"/>
+
+
+
+	                <Text text="Create account task" id="text5"/>
+
+
+
+	                <Text text="Create another task" id="text6"/>
+	                <Text text="Click" id="text7"/></cells>
+	         
+	           </ColumnListItem>
+	            <ColumnListItem type="Active" id="item2">
+
+
+     <cells>
+
+
+
+	                <Text text="3" id="text8"/>
+
+
+
+	                <Text text="Create account task" id="text9"/>
+
+
+
+	                <Text text="Create another task" id="text10"/>
+	                <Text text="Click" id="text11"/></cells>
+
+
+	        </ColumnListItem>
+
+
+
+	    </items>
+
+
+
+	    <columns>
+
+
+
+	        <Column id="column0">
+
+
+
+	            <header>
+
+
+
+	                <Label text="No" id="label0"/>
+
+
+
+	            </header>
+
+
+
+	        </Column>
+
+
+
+	        <Column id="column1">
+
+
+
+	            <header>
+
+
+
+	                <Label text="Activity" id="label1"/>
+
+
+
+	            </header>
+
+
+
+	        </Column>
+
+
+
+	        <Column id="column2">
+
+
+
+	            <header>
+
+
+
+	                <Label text="Description" id="label2"/>
+
+
+
+	            </header>
+
+
+
+	        </Column>
+	          <Column id="column3">
+
+
+
+	            <header>
+
+
+
+	                <Label text="Action" id="label3"/>
+
+
+
+	            </header>
+
+
+
+	        </Column></columns></Table>
+
+		</Page>
+
+	</mvc:View>

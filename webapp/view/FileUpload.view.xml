@@ -1,0 +1,49 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout.form"
+    controllerName="demo.F4SUI.controller.FileUpload" xmlns:html="http://www.w3.org/1999/xhtml">
+    <Page title="Create account clerk" 
+        showNavButton="true"
+		navButtonPress="onNavBack">
+        <content>
+            <l:SimpleForm editable="true">
+                <l:content>
+                    <Label text="File Name"></Label>
+                    <VBox>
+                        <u:FileUploader id="idfileUploader" width="50%"
+                        sameFilenameAllowed="false" placeholder="Choose a Excel file"
+                        style="Emphasized">
+                        </u:FileUploader>
+                        <Button text="Upload" press="onUpload"></Button>
+                         <Button text="Execute" press="onExecute"></Button>
+                    </VBox>
+                </l:content>
+            </l:SimpleForm>
+            <Table id="idTable" items="{/}">
+                <items>
+                    <ColumnListItem>
+                        <cells>
+                            <Text text="{prodno}"></Text>
+                            <Text text="{product}"></Text>
+                            <Text text="{productname}"></Text>
+                            <Text text="{uom}"></Text>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+                <columns>
+                    <Column>
+                        <Text text="Product No"></Text>
+                    </Column>
+                    <Column>
+                        <Text text="Product"></Text>
+                    </Column>
+                    <Column>
+                        <Text text="Product Name"></Text>
+                    </Column>
+                    <Column>
+                        <Text text="Unit of Measure"></Text>
+                    </Column>
+                </columns>
+            </Table>
+        </content>
+    </Page>
+</core:View>
